@@ -1,0 +1,222 @@
+/* Globale Stile */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #388e3c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Formular-Stile */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: #81c784;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e7d32;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.team-selection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.add-team-field {
+    display: none;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.add-team-btn {
+    background-color: #81c784;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* Meldungsstile */
+.error-message {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #4caf50;
+    font-weight: bold;
+}
+
+/* Tabellenstile */
+.registered-players {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        padding: 10px;
+    }
+    
+    button {
+        padding: 10px 15px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    /* Zusätzliche Stile für Adressfelder */
+.address-container {
+    margin-bottom: 20px;
+}
+
+.address-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address-row {
+    display: flex;
+    gap: 15px;
+}
+
+.street-field {
+    flex: 3;
+}
+
+.house-number-field {
+    flex: 1;
+}
+
+.postal-code-field {
+    flex: 1;
+}
+
+.city-field {
+    flex: 3;
+}
+
+@media (max-width: 600px) {
+    .address-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+}
