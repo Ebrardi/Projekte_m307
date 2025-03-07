@@ -1,43 +1,46 @@
 Fussball-Registrierungssystem
-Ein interaktives Webformular zum Registrieren von Fussballspielern, entwickelt für das Modul 307.
-Installation
 
-Platzieren Sie alle Dateien in Ihrem MAMP-Webserver-Verzeichnis.
-Erstellen Sie eine neue Datenbank in phpMyAdmin:
+Hier gebe ich einen kurzen Rapport meiner erstellten Datenbank des Moduls 307 - Interaktive Website mit Formular entwickeln.
+Hierbei geht es um ein interaktives Webformular zum Registrieren von Fussballspielern.
+
+Installationsvorgang:
+
+Das Platzieren aller Dateien in meinem MAMP-Webserver-Verzeichnis.
+Das Erstellen einer neuen Datenbank in phpMyAdmin:
 
 Name: football_registration
-Oder importieren Sie die setup.sql-Datei
+Oder setup.sql-Datei importieren
 
 
-Passen Sie falls nötig die Verbindungsdaten in config.php an:
+Verbindungsdaten in config.php anpassen(falls nötig):
 
 Standardmässig: Benutzer root, Passwort root
 
 
 
-Dateien im Projekt
+Dateien im Projekt:
 
-index.php: Hauptdatei, die die Anwendungslogik enthält
-config.php: Datenbankverbindungskonfiguration
-functions.php: Hilfsfunktionen für die Anwendung
-template.php: HTML-Template für die Benutzeroberfläche
-styles.css: CSS-Styling für das Design
-script.js: JavaScript für interaktive Funktionen
-setup.sql: SQL-Befehle zum Einrichten der Datenbank
+- index.php: Hauptdatei, die die Anwendungslogik enthält
+- config.php: Datenbankverbindungskonfiguration
+- functions.php: Hilfsfunktionen für die Anwendung
+- template.php: HTML-Template für die Benutzeroberfläche
+- styles.css: CSS-Styling für das Design
+- script.js: JavaScript für interaktive Funktionen
+- setup.sql: SQL-Befehle zum Einrichten der Datenbank
 
-Funktionen
+Funktionen:
 
-Auswahl oder Hinzufügen von Fussballmannschaften
-Auswahl der Spielerposition
-Eingabe persönlicher Daten (Name, Adresse, E-Mail)
-Validierung der Eingabenx^x
-Speicherung in der Datenbank
-Anzeige der letzten 10 registrierten Spieler
+- Auswahl oder Hinzufügen von Fussballmannschaften
+- Auswahl der Spielerposition
+- Eingabe persönlicher Daten (Name, Adresse, E-Mail)
+- Validierung der Eingabenx^x
+- Speicherung in der Datenbank
+- Anzeige der letzten 10 registrierten Spieler
 
-Technische Details
+Technische Details:
 
-Verwendet das POST/Redirect/GET-Prinzip zur Vermeidung doppelter Einträge
-Formularvalidierung mit Fehleranzeige
-Beibehaltung der eingegebenen Daten bei Validierungsfehlern
-Schutz vor SQL-Injection durch vorbereitete Anweisungen
-Responsive Design für verschiedene Bildschirmgrößen
+- Verwendet das POST/Redirect/GET-Prinzip zur Vermeidung doppelter Einträge
+- Formularvalidierung mit Fehleranzeige
+- Beibehaltung der eingegebenen Daten bei Validierungsfehlern
+- Schutz vor SQL-Injection durch vorbereitete Anweisungen
+- Responsive Design für verschiedene Bildschirmgrößen
