@@ -81,6 +81,10 @@ button:hover {
     opacity: 0.9;
 }
 
+<<<<<<< HEAD
+=======
+/* Zusätzliches Styling für das Datumsfeld */
+>>>>>>> e710fdb66220c201d23ad45447823f39cc15caab
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
