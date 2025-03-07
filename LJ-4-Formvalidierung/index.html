@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validate</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+    <h1>Formvalidierung</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="anrede">Anrede</label>
+            <input list="anrede-options" id="anrede" name="anrede" placeholder="Anrede auswählen oder eingeben">
+            <datalist id="anrede-options">
+                <option value="Herr">
+                <option value="Frau">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" placeholder="Ebrard" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" placeholder="Chionga" required>
+        </div>
+
+        <div class="form-group">
+            <label for="geburtsdatum">Geburtsdatum</label>
+            <input type="date" id="geburtsdatum" name="geburtsdatum" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="ebrard.chionga@sbw-media.ch" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="079123 12 34" pattern="[0-9\s]+" required>
+        </div>
+
+        <div class="form-group">
+            <label for="anrede-dropdown">Anrede (Dropdown)</label>
+            <select id="anrede-dropdown" name="anrede-dropdown">
+                <option value="" disabled selected>Bitte wählen</option>
+                <option value="herr">Herr</option>
+                <option value="frau">Frau</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Geschlecht</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="maennlich" name="geschlecht" value="maennlich" required>
+                    <label for="maennlich">Männlich</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
+                    <label for="weiblich">Weiblich</label>
+                </div>
+            </div>
+        </div>
+        
+        <button type="submit">Absenden</button>
+    </form>
+</body>
+</html>
