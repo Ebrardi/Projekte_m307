@@ -46,3 +46,7 @@ Projektstuktur(Files)
 
 Testen
 Das Formular kann lokal getestet werden, indem die HTML-Datei im Browser geöffnet wird.
+
+Screenshots:
+
+<img src="/assets/picture/LJ-4-Formvalidierung(Screenshot).jpeg" alt="image-2">
