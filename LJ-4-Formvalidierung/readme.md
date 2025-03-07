@@ -46,4 +46,3 @@ Projektstuktur(Files)
 
 Testen
 Das Formular kann lokal getestet werden, indem die HTML-Datei im Browser geöffnet wird.
-ccc
